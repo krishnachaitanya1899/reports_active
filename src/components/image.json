@@ -1,0 +1,69 @@
+{
+    "Name": "Report",
+    "Type": "report",
+    "Width": "2.5in",
+    "CustomProperties": [
+        {
+            "Name": "DisplayType",
+            "Value": "Page"
+        },
+        {
+            "Name": "SizeType",
+            "Value": "Default"
+        }
+    ],
+    "Page": {
+        "BottomMargin": "0in",
+        "LeftMargin": "0in",
+        "PageHeight": "11in",
+        "PageWidth": "8.5in",
+        "PageOrientation": "Portrait",
+        "RightMargin": "0in",
+        "TopMargin": "0in",
+        "ColumnSpacing": "0in",
+        "Columns": 1
+    },
+    "Layers": [
+        {
+            "Type": "layer",
+            "Name": "default"
+        }
+    ],
+    "Body": {
+        "Type": "section",
+        "Height": "3in",
+        "Name": "Body",
+        "ReportItems": [
+            {
+                "Type": "image",
+                "Top": "1in",
+                "Left": "0.25in",
+                "Width": "2.25in",
+                "Height": "2in",
+                "Sizing": "FitProportional",
+                "HorizontalAlignment": "Center",
+                "VerticalAlignment": "Middle",
+                "Name": "Image1"
+            },
+            {
+                "ZIndex": 1,
+                "KeepTogether": true,
+                "Type": "textbox",
+                "Top": "0.75in",
+                "Left": "0.25in",
+                "Width": "2.25in",
+                "Height": "0.25in",
+                "CanGrow": true,
+                "Value": "Image Report Item",
+                "Style": {
+                    "FontWeight": "Bold",
+                    "PaddingLeft": "2pt",
+                    "PaddingRight": "2pt",
+                    "PaddingTop": "2pt",
+                    "PaddingBottom": "2pt"
+                },
+                "Name": "TextBox1"
+            }
+        ]
+    }
+}

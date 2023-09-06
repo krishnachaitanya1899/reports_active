@@ -1,0 +1,838 @@
+{
+    "Name": "multisectionreport1",
+    "Width": "0in",
+    "Layers": [
+        {
+            "Name": "default"
+        }
+    ],
+    "CustomProperties": [
+        {
+            "Name": "DisplayType",
+            "Value": "Page"
+        },
+        {
+            "Name": "SizeType",
+            "Value": "Default"
+        },
+        {
+            "Name": "PaperOrientation",
+            "Value": "Portrait"
+        }
+    ],
+    "Page": {
+        "PageWidth": "8.5in",
+        "PageHeight": "11in",
+        "RightMargin": "0in",
+        "LeftMargin": "0in",
+        "TopMargin": "0in",
+        "BottomMargin": "0in",
+        "Columns": 1,
+        "ColumnSpacing": "0.5in"
+    },
+    "DataSources": [
+        {
+            "Name": "DataSource",
+            "ConnectionProperties": {
+                "DataProvider": "JSON",
+                "ConnectString": "endpoint=http://localhost:3001"
+            }
+        }
+    ],
+    "ReportSections": [
+        {
+            "Type": "Continuous",
+            "Name": "ContinuousSection1",
+            "Page": {
+                "PageWidth": "8.5in",
+                "PageHeight": "11in",
+                "RightMargin": "0in",
+                "LeftMargin": "0in",
+                "TopMargin": "1in",
+                "BottomMargin": "1in",
+                "Columns": 1,
+                "ColumnSpacing": "0in"
+            },
+            "Width": "8.1458in",
+            "Body": {
+                "Height": "1.5209in",
+                "ReportItems": [
+                    {
+                        "Type": "table",
+                        "Name": "Table1",
+                        "CustomProperties": [
+                            {
+                                "Name": "ReportStyleId",
+                                "Value": "c728fbbc-6ae5-47bd-8e20-d710772a5858"
+                            },
+                            {
+                                "Name": "ReportStyleName",
+                                "Value": "Light Style 1 Accent 1"
+                            }
+                        ],
+                        "DataSetName": "Field1",
+                        "PageBreak": "Start",
+                        "Filters": [
+                            {
+                                "FilterExpression": "=Fields!wbs.Value",
+                                "Operator": "Equal",
+                                "FilterValues": [
+                                    ""
+                                ]
+                            },
+                            {
+                                "FilterExpression": "=Fields!description.Value",
+                                "Operator": "Equal",
+                                "FilterValues": [
+                                    ""
+                                ]
+                            },
+                            {
+                                "FilterExpression": "=Fields!material_cost.Value",
+                                "Operator": "Equal",
+                                "FilterValues": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "NewSection": true,
+                        "KeepTogether": true,
+                        "FrozenRows": 1,
+                        "Style": {
+                            "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                            "FontSize": "=Theme.Fonts!MinorFont.Size",
+                            "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                            "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                            "Color": "=Theme.Colors!Dark1",
+                            "BackgroundColor": "#79c37c"
+                        },
+                        "TableColumns": [
+                            {
+                                "Width": "0.5833in"
+                            },
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "0.6667in"
+                            },
+                            {
+                                "Width": "0.6042in"
+                            },
+                            {
+                                "Width": "0.6146in"
+                            },
+                            {
+                                "Width": "0.5833in"
+                            },
+                            {
+                                "Width": "1in"
+                            }
+                        ],
+                        "Header": {
+                            "TableRows": [
+                                {
+                                    "Height": "0.25in",
+                                    "TableCells": [
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox1",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "wbs",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "0.5833in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox2",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "labour_cost",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox3",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "equipment_hours",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox28",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "labour_cost",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox25",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "equipment_hours",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox22",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "material_cost",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "0.6667in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox19",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "subcontract_cost",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "0.6042in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox16",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "equipment_distributable",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "0.6146in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox13",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "total_cost",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "0.5833in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox10",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "description",
+                                                "Style": {
+                                                    "TopBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "BottomBorder": {
+                                                        "Color": "=Theme.Colors!Accent1",
+                                                        "Style": "Solid",
+                                                        "Width": "2pt"
+                                                    },
+                                                    "FontFamily": "=Theme.Fonts!MajorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MajorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MajorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MajorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=Theme.Colors!Light1"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "RepeatOnNewPage": true
+                        },
+                        "Details": {
+                            "TableRows": [
+                                {
+                                    "Height": "0.25in",
+                                    "TableCells": [
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox4",
+                                                "DataElementName": "wbs",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!wbs.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "0.5833in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox5",
+                                                "DataElementName": "labour_cost",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!labour_cost.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox6",
+                                                "DataElementName": "equipment_hours",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!equipment_hours.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox29",
+                                                "DataElementName": "labour_cost",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!labour_cost.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox26",
+                                                "DataElementName": "equipment_hours",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!equipment_hours.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox23",
+                                                "DataElementName": "material_cost",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!material_cost.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "0.6667in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox20",
+                                                "DataElementName": "subcontract_cost",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!subcontract_cost.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "0.6042in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox17",
+                                                "DataElementName": "equipment_distributable",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!equipment_distributable.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "0.6146in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox14",
+                                                "DataElementName": "total_cost",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!total_cost.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "0.5833in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox11",
+                                                "DataElementName": "description",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!description.Value",
+                                                "Style": {
+                                                    "FontFamily": "=Theme.Fonts!MinorFont.Family",
+                                                    "FontSize": "=Theme.Fonts!MinorFont.Size",
+                                                    "FontStyle": "=Theme.Fonts!MinorFont.Style",
+                                                    "FontWeight": "=Theme.Fonts!MinorFont.Weight",
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "=Theme.Colors!Dark1",
+                                                    "BackgroundColor": "=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "Left": "0.0312in",
+                        "Top": "1.0209in",
+                        "Width": "8.0521in",
+                        "Height": "0.5in"
+                    },
+                    {
+                        "Type": "textbox",
+                        "Name": "TextBox7",
+                        "ZIndex": 1,
+                        "CanGrow": true,
+                        "KeepTogether": true,
+                        "Style": {
+                            "PaddingLeft": "2pt",
+                            "PaddingRight": "2pt",
+                            "PaddingTop": "2pt",
+                            "PaddingBottom": "2pt"
+                        },
+                        "Width": "1in",
+                        "Height": "0.25in"
+                    },
+                    {
+                        "Type": "textbox",
+                        "Name": "TextBox8",
+                        "ZIndex": 2,
+                        "CanGrow": true,
+                        "KeepTogether": true,
+                        "Value": "Estimations table data from postgres database.",
+                        "Style": {
+                            "PaddingLeft": "2pt",
+                            "PaddingRight": "2pt",
+                            "PaddingTop": "2pt",
+                            "PaddingBottom": "2pt",
+                            "TextAlign": "Center"
+                        },
+                        "Width": "8.1458in",
+                        "Height": "0.25in"
+                    }
+                ]
+            }
+        }
+    ],
+    "DataSets": [
+        {
+            "Name": "DataSet",
+            "Fields": [
+                {
+                    "Name": "Field1",
+                    "DataField": "Field1"
+                }
+            ],
+            "Query": {
+                "DataSourceName": "DataSource",
+                "CommandText": "uri=/estimations;jpath=$"
+            },
+            "CaseSensitivity": "Auto",
+            "KanatypeSensitivity": "Auto",
+            "AccentSensitivity": "Auto",
+            "WidthSensitivity": "Auto"
+        },
+        {
+            "Name": "Field1",
+            "Fields": [
+                {
+                    "Name": "wbs",
+                    "DataField": "wbs"
+                },
+                {
+                    "Name": "description",
+                    "DataField": "description"
+                },
+                {
+                    "Name": "labour_hours",
+                    "DataField": "labour_hours"
+                },
+                {
+                    "Name": "labour_cost",
+                    "DataField": "labour_cost"
+                },
+                {
+                    "Name": "equipment_hours",
+                    "DataField": "equipment_hours"
+                },
+                {
+                    "Name": "material_cost",
+                    "DataField": "material_cost"
+                },
+                {
+                    "Name": "subcontract_cost",
+                    "DataField": "subcontract_cost"
+                },
+                {
+                    "Name": "equipment_distributable",
+                    "DataField": "equipment_distributable"
+                },
+                {
+                    "Name": "total_cost",
+                    "DataField": "total_cost"
+                }
+            ],
+            "Query": {
+                "DataSourceName": "$dataset:DataSet/Field1"
+            },
+            "CaseSensitivity": "Auto",
+            "KanatypeSensitivity": "Auto",
+            "AccentSensitivity": "Auto",
+            "WidthSensitivity": "Auto"
+        }
+    ]
+}
